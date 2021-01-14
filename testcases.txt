@@ -1,0 +1,56 @@
+As a user ,I want to be able to go to bottom line and check if the links are working correctly
+Test Case 1:
+1-go to https://www.carmax.com/
+2-scroll down the page
+3-verify the bottom page has :Shop,Sell,Finance,About,Careers,More
+
+*Expected Result
+Shop,Sell,Finance,About,Careers,More
+*Actual result
+
+Test Case2:
+1-go to https://www.carmax.com/
+2-scroll down the page
+3-click “privacy policy”
+4-verify the title is”https://www.carmax.com/privacy-policy”
+
+*Expected Result
+"Privacy Policy | CarMax"
+
+
+
+Test Case3:
+1-go to https://www.carmax.com/
+2-scroll down the page
+3-click “privacy policy”
+4-click contact us button
+5-verify the page has  "take control of your data" button
+
+*Expected Result:
+the user should be able to see a button for data control
+Actual Result:
+As Expected
+Test Result:
+PASSED
+
+
+Test Case4/a:
+1-go to https://www.carmax.com/
+2-scroll down the page
+3-click the “How it works”link,under the Finance tag
+Test Case4/b:
+3-verify the page has “calculate a budget “text
+*Expected Result
+The user should be able to see “Get-Pre Approved” text on the button and should be landed correct URL
+Actual Result:
+As expected
+Test Result:
+PASSED
+
+Test Case 5-
+om/2-scroll down the page
+3-click “privacy policy”4-
+click contact us button
+5-verify the page has "take control of your data"
+ buttonfor data controlTest Case4Expected ResultActual resultTest Result1-go to https://www.carmax.com/2-scroll down the page3-click the “How it works”link,under the Finance tagTest Case4/b:3
+ -verify the page has “calculate a budget “textThe user should be to landed correct URLThe user should be able to see “Get-Pre Approved” text on the button .As ExpectedPASSEDTest Case5Expected ResultActual resultTest Result1-go to https://www.carmax.com2-scroll down the page3-click SearchJob 4-enter the set of data to search box5-enterAfter the user sent the job type and enter,should be able to see all location for that job without use the specific locationThe user able to see all the locationsfor the job that searchedPASSED
