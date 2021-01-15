@@ -23,7 +23,7 @@ import utilities.Driver;
 public class SignInTest extends TestBase {
 	
 	@Test(dataProvider="dataProvider1")
-	public void negativeRegister(String email,String password) {
+	public void negativeSignIn(String email,String password) {
 
 		Driver.getDriver().get(ConfigReader.getProperty("url"));
 		MainPage mp = new MainPage();
@@ -43,7 +43,7 @@ public class SignInTest extends TestBase {
 		assertTrue(expectedNum==list.size());
 	}
 	@Test
-	public void positiveRegister() {
+	public void positiveSignIn() {
 		
 		Driver.getDriver().get(ConfigReader.getProperty("url"));
 		MainPage mp = new MainPage();
