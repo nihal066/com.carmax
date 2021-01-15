@@ -26,8 +26,6 @@ public class HowItWorksTest extends TestBase{
         BrowserUtils.scroll(0,100);
         m.howItWorks.click();
         m.approveButton.click();
-        String name="Screenshots";
-        BrowserUtils.takeScreenshot(name);
         assertTrue(driver.getPageSource().contains("Let's calculate a budget that works for you.*"));
 
     }

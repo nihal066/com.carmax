@@ -14,7 +14,7 @@ public class PrivacyPolicyTest2 extends TestBase{
         m.privacyPolicy.click();
         BrowserUtils.waitForPageToLoad(1000);
         m.contactUs.click();
-        String name="Screenshots";
+        String name="zhot";
         BrowserUtils.takeScreenshot(name);
         assertTrue(driver.getPageSource().contains("take control of your data"));
 

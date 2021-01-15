@@ -6,7 +6,6 @@ import org.openqa.selenium.support.PageFactory;
 import tests.TestBase;
 import utilities.Driver;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class NihalPage extends TestBase {

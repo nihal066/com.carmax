@@ -13,7 +13,7 @@ public class FooterTest extends TestBase{
     @Test(priority = 1,groups = "A")
 
     public void footerTest(){
-        NihalPage m=new NihalPage();
+        NihalPage  m=new NihalPage();
         List<String> actualResult=BrowserUtils.getElementsText(m.footerlist);
         List<String> expectedResult=new ArrayList<>(Arrays.asList("Shop","Sell","Finance","About","Careers","More"));
         System.out.println(expectedResult);
