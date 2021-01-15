@@ -9,9 +9,9 @@ import utilities.Driver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainPage extends TestBase {
+public class NihalPage extends TestBase {
 
-    public MainPage(){
+    public NihalPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 

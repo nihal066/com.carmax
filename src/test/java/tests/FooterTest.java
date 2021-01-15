@@ -1,8 +1,7 @@
 package tests;
 
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import pages.MainPage;
+import pages.NihalPage;
 import utilities.BrowserUtils;
 import static org.testng.Assert.*;
 import java.util.ArrayList;
@@ -14,11 +13,13 @@ public class FooterTest extends TestBase{
     @Test(priority = 1,groups = "A")
 
     public void footerTest(){
-        MainPage m=new MainPage();
+        NihalPage m=new NihalPage();
         List<String> actualResult=BrowserUtils.getElementsText(m.footerlist);
-        List<String> expectedResul=new ArrayList<>(Arrays.asList("Shop","Sell","Finance","About","Careers","More"));
-        System.out.println(expectedResul);
-        assertEquals(actualResult,expectedResul);
+        List<String> expectedResult=new ArrayList<>(Arrays.asList("Shop","Sell","Finance","About","Careers","More"));
+        System.out.println(expectedResult);
+//        Collections.sort(actualResult);
+//        Collections.sort(expectedResult);
+        assertEquals(actualResult,expectedResult);
 
     }
 
