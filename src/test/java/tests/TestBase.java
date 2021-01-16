@@ -47,7 +47,6 @@ public abstract class TestBase {
         //set report configurations
         reporter.setSystemInfo("QA Automation Tester", "Barack Obama");
         reporter.setSystemInfo("Environment", "TEST/QA");
-        reporter.setSystemInfo("OS", System.getProperty("os.name"));
         reporter.setSystemInfo("browser", ConfigReader.getProperty("browser"));
         
     }
