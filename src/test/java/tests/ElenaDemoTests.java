@@ -7,8 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import pageClasses.CarsChoisesPage;
-import pageClasses.LoginPage;
+import pages.CarsChoisesPage;
+import pages.LoginPage;
 import utilities.BrowserUtils;
 import utilities.Driver;
 
