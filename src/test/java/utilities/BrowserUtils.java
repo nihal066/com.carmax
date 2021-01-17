@@ -14,9 +14,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.function.Function;
 
-//import ru.yandex.qatools.ashot.AShot;
-//import ru.yandex.qatools.ashot.Screenshot;
-//import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 public class BrowserUtils {
 
         public static void switchToWindow(String targetTitle) {
@@ -154,14 +154,14 @@ public class BrowserUtils {
             File finalDestination = new File(path);
             FileUtils.copyFile(source, finalDestination);
         }
-//        public static void takeFullScreenshot(String fileName) throws IOException {
-//            Screenshot fpScreenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000))
-//                    .takeScreenshot(Driver.getDriver());
-//            String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-//            String path = System.getProperty("user.dir") + "/test-output/Screenshots/" + fileName + date
-//                    + ".png";
-//            ImageIO.write(fpScreenshot.getImage(), "PNG", new File(path));
-//        }
+        public static void takeFullScreenshot(String fileName) throws IOException {
+            Screenshot fpScreenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000))
+                    .takeScreenshot(Driver.getDriver());
+            String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+            String path = System.getProperty("user.dir") + "/test-output/Screenshots/" + fileName + date
+                    + ".png";
+            ImageIO.write(fpScreenshot.getImage(), "PNG", new File(path));
+        }
 
     public static void scroll(int horizontalAxis, int verticalAxis) {
         JavascriptExecutor js = (JavascriptExecutor)Driver.getDriver();
