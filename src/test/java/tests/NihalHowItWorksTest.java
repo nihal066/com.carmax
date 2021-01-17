@@ -8,7 +8,7 @@ import java.io.IOException;
 import static org.testng.Assert.*;
 
 
-public class HowItWorksTest extends TestBase{
+public class NihalHowItWorksTest extends TestBase{
 
     @Test(priority = 4,groups = "A")
     public void HowItWorks(){

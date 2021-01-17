@@ -5,7 +5,7 @@ import pages.NihalPage;
 import static org.testng.Assert.*;
 import utilities.BrowserUtils;
 
-public class PrivacyPolicyTest extends TestBase{
+public class NihalPrivacyPolicyTest extends TestBase{
 
     @Test(priority = 2,groups = "A")
     public void checkPrivacyPolicy(){

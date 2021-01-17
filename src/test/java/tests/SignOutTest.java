@@ -1,4 +1,4 @@
-package furkan;
+package tests;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import pageClasses.AfterSign;
 import pageClasses.MainPage;
 import pageClasses.SignIn;
+import tests.TestBase;
 import utilities.BrowserUtils;
 import utilities.ConfigReader;
 import utilities.Driver;

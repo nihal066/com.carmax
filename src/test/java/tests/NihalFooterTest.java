@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class FooterTest extends TestBase{
+public class NihalFooterTest extends TestBase{
 
     @Test(priority = 1,groups = "A")
 

@@ -1,4 +1,4 @@
-package furkan;
+package tests;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -18,6 +18,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import tests.TestBase;
 import utilities.BrowserUtils;
 import utilities.ConfigReader;
 import utilities.Driver;
