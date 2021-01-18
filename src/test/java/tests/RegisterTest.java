@@ -25,44 +25,66 @@ import utilities.Driver;
 
 public class RegisterTest extends TestBase {
 	
-	
-	@Test(dataProvider="dataProvider")
-	public void testRegister(String name,String lastName,String email,String password,String confirmPassword) {
-
-		Driver.getDriver().get(ConfigReader.getProperty("url"));
-		MainPage mp = new MainPage();
-		mp.profileIcon.click();
-		BrowserUtils.waitForVisibility(mp.register, 10);
-		jsExecutor.executeScript("arguments[0].click();" , mp.register);
-		RegisterPage rp = new RegisterPage();
-		rp.firstName.sendKeys(name);
-		rp.lastname.sendKeys(lastName);
-		rp.email.sendKeys(email);
-		rp.password.sendKeys(password);
-		rp.confirmPassword.sendKeys(confirmPassword);
-		rp.registerButton.click();
-		String title="Browse used cars and new cars online";
-		assertTrue(Driver.getDriver().getTitle().contains(title));
+	public class RegisterTest extends TestBase {
 		
+		
+		@Test(dataProvider="dataProvider")
+		public void negativeRegister(String name,String lastName,String email,String password,String confirmPassword) {
+
+			Driver.getDriver().get(ConfigReader.getProperty("url"));
+			MainPage mp = new MainPage();
+			mp.profileIcon.click();
+			BrowserUtils.waitForVisibility(mp.register, 10);
+			jsExecutor.executeScript("arguments[0].click();" , mp.register);
+			RegisterPage rp = new RegisterPage();
+			rp.firstName.sendKeys(name);
+			rp.lastname.sendKeys(lastName);
+			rp.email.sendKeys(email);
+			rp.password.sendKeys(password);
+			rp.confirmPassword.sendKeys(confirmPassword);
+			rp.registerButton.click();
+			String title="Register";
+			assertTrue(Driver.getDriver().getTitle().contains(title));
 			
-	}
-	
-	@DataProvider
-	public Object[][] dataProvider(){
+				
+		}
 		
-		return new Object[][] {
-			{"John","Doe","jo1@gmail.com","johndoe","johndoe"},
-			{"John","Doe","jo1@gmail.com","johndoe1","johndoe"},
-			{"","Doe","jo1@gmail.com","johndoe1","johndoe1"},
-			{"John","","jo1@gmail.com","johndoe1","johndoe1"},
-			{"John","Doe","","johndoe1","johndoe1"},
-			{"John","Doe","jo13@gmail.com","johndoe1","johndoe1"}
-		};
+		@Test
+		public void positiveRegister() {
+			Faker fake = new Faker();
+			Driver.getDriver().get(ConfigReader.getProperty("url"));
+			MainPage mp = new MainPage();
+			mp.profileIcon.click();
+			BrowserUtils.waitForVisibility(mp.register, 10);
+			jsExecutor.executeScript("arguments[0].click();" , mp.register);
+			RegisterPage rp = new RegisterPage();
+			rp.firstName.sendKeys(ConfigReader.getProperty("name"));
+			rp.lastname.sendKeys(ConfigReader.getProperty("lastname"));
+			rp.email.sendKeys(fake.internet().emailAddress());
+			rp.password.sendKeys(ConfigReader.getProperty("password"));
+			rp.confirmPassword.sendKeys(ConfigReader.getProperty("password"));
+			rp.registerButton.click();
+			String title="Browse used cars and new cars online";
+			assertTrue(Driver.getDriver().getTitle().contains(title));
+			
+				
+		}
+		
+		@DataProvider
+		public Object[][] dataProvider(){
+			
+			return new Object[][] {
+				{"John","Doe","jo1@gmail.com","johndoe","johndoe"},
+				{"John","Doe","jo1@gmail.com","johndoe1","johndoe"},
+				{"","Doe","jo1@gmail.com","johndoe1","johndoe1"},
+				{"John","","jo1@gmail.com","johndoe1","johndoe1"},
+				{"John","Doe","","johndoe1","johndoe1"},
+				
+			};
+		}
+		
+		
+		
+		
+		
 	}
-	
-	
-	
-	
-	
-}
-
