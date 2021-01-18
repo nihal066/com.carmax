@@ -56,7 +56,7 @@ public class RegisterTest extends TestBase {
 			{"","Doe","jo1@gmail.com","johndoe1","johndoe1"},
 			{"John","","jo1@gmail.com","johndoe1","johndoe1"},
 			{"John","Doe","","johndoe1","johndoe1"},
-			{"John","Doe","jo5@gmail.com","johndoe1","johndoe1"}
+			{"John","Doe","jo13@gmail.com","johndoe1","johndoe1"}
 		};
 	}
 	
