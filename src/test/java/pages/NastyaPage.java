@@ -1,4 +1,4 @@
-package pages;
+package pageClasses;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,8 +26,8 @@ public class NastyaPage extends TestBase {
     @FindBy(xpath = "Research Best-Selling Cars")
     public WebElement findBestCar;
     
-    @FindBy(xpath ="(//a[@href=\'/cars/all\'])[3]")//
-    public WebElement shpAllCar;
+    @FindBy(xpath ="//a[@href='/articles']")//
+    public WebElement researchMore;
     
     @FindBy(xpath = "(//button[@class='kmx-button kmx-button--tertiary kmx-button--flat'])[1]")//
    public WebElement keepStore;
@@ -35,6 +35,12 @@ public class NastyaPage extends TestBase {
     @FindBy(xpath = "(//a[@href='/cars/honda'])[2]")//
     public WebElement honda;
 
-
+    @FindBy (xpath = "//button[@class='budget-search-disclaimer-dialog-button']")
+    public WebElement infoButton;
+    
+    @FindBy (xpath = "//section[@class='mdc-dialog__body']")
+    public WebElement infoMessage;
+    
+   
 
 }

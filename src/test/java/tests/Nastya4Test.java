@@ -15,7 +15,7 @@ import java.util.List;
 public class Nastya4Test extends TestBase {
 	
 	@Test
-	public void getBestCar() {
+	public void test1() {
 		
 		NastyaPage n = new NastyaPage();
 		
@@ -25,13 +25,16 @@ public class Nastya4Test extends TestBase {
 	}
 
 	@Test
-	public void shopAllCar() {
+	public void test2() {
 		
 		NastyaPage n = new NastyaPage();
 		
-		n.shpAllCar.click();
+		n.researchMore.click();
 		String actual = driver.getCurrentUrl();
-		Assert.assertTrue(actual.contains("all"));
+		Assert.assertTrue(actual.contains("/articles"));
+		
+
+		
 	}
 
 }

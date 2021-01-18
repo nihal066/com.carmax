@@ -17,18 +17,8 @@ public class Nastya5Test extends TestBase {
 
 		NastyaPage n = new NastyaPage();
 
-		n.shpAllCar.click();
-		BrowserUtils.waitForPageToLoad(3000);
-
-		Actions actions = new Actions(driver);
-		actions.moveToElement(n.keepStore).click().build().perform();
-
-		BrowserUtils.waitForPageToLoad(1000);
-		n.honda.click();
-
-		BrowserUtils.waitForPageToLoad(1000);
-		Assert.assertTrue(driver.getCurrentUrl().contains("honda"));
-
+		n.infoButton.click();
+		Assert.assertTrue(n.infoMessage.isEnabled());
 	}
 
 }
