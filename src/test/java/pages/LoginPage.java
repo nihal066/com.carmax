@@ -23,6 +23,9 @@ public class LoginPage {
 	@FindBy (xpath = "//*[@href='/cars/all?price=10000']")
 	public WebElement lowPriceField;
 	
+	@FindBy (xpath = "//a[@id='header-mobile-drawer-focus-start']")
+	public WebElement shopButton;
+	
 
 
 	

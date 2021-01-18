@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import tests.TestBase;
 import utilities.Driver;
 
-public class NastyaPage extends TestBase {
+public class NastyaPage{
     public NastyaPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }

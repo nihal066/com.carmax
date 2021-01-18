@@ -19,7 +19,7 @@ public class ElenaDemoTests extends TestBase{
 	
 	@Test
 	public void test1() {
-		
+		lp.shopButton.click();
 		LoginPage lp = new LoginPage();
 		
 		lp.suvsField.click();
@@ -38,6 +38,7 @@ public class ElenaDemoTests extends TestBase{
 	@Test
 	public void test2() {
 		LoginPage lp = new LoginPage();
+		lp.shopButton.click();
 		lp.suvsField.click();
 				
 		CarsChoisesPage cc = new CarsChoisesPage();
@@ -56,7 +57,7 @@ int length = cc.recommendedFilters.size();
 	@Test
 		public void test3() {
 		LoginPage lp = new LoginPage();
-		
+		lp.shopButton.click();
 		lp.hondaField.click();
 		
 		
@@ -72,6 +73,7 @@ int length = cc.recommendedFilters.size();
 	@Test
 	public void test4() {
 		LoginPage lp = new LoginPage();
+		lp.shopButton.click();
 		lp.hondaField.click();
 				
 		CarsChoisesPage cc = new CarsChoisesPage();
@@ -91,6 +93,7 @@ int length = cc.recommendedFilters.size();
 	@Test
 	public void test5() {
 		LoginPage lp = new LoginPage();
+		lp.shopButton.click();
 		lp.lowPriceField.click();
 		CarsChoisesPage cc = new CarsChoisesPage();
 		

@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import tests.TestBase;
 import utilities.Driver;
 
-public class BurcuPage extends TestBase{
+public class BurcuPage{
     public BurcuPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }

@@ -8,7 +8,7 @@ import utilities.Driver;
 
 import java.util.List;
 
-public class NihalPage extends TestBase {
+public class NihalPage{
 
     public NihalPage(){
         PageFactory.initElements(Driver.getDriver(),this);
