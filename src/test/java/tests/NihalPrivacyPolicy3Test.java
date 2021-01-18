@@ -6,7 +6,7 @@ import utilities.BrowserUtils;
 
 import java.io.IOException;
 
-public class NihalPrivacyPolicyTest2 extends TestBase{
+public class NihalPrivacyPolicy3Test extends TestBase{
     @Test(priority = 3,groups = "A")
     public void ContactUs() throws IOException {
         NihalPage m= new NihalPage();
