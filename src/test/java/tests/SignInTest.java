@@ -67,7 +67,7 @@ public class SignInTest extends TestBase {
 	public Object[][] dataProvider1(){
 		
 		return new Object[][] {
-			{"jo3@gmail.com","johndoe"},{"","johndoe1"},{"jo3@gmail.com",""},{"joj@gmail.com","johndoe1"}	
+			{"jo3@gmail.com","johndoe"},{"joj@gmail.com","johndoe1"}	
 		};
 
 	}
